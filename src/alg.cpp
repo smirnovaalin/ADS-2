@@ -5,10 +5,10 @@
 
 double pown(double value, uint16_t n) {
   double res = 1;
-  if (n == 1){
+  if (n == 1) {
     return value;
-  }else{
-    for (int i = 0; i < n; i++){
+  } else {
+    for (int i = 0; i < n; i++) {
       res *= value;
     }
   }
@@ -22,7 +22,7 @@ uint64_t fact(uint16_t n) {
   } else {
     for (int i = 1; i < n; i++) {
       res *= (n - i);
-	  }
+    }
   }
   return res;
 }
@@ -36,7 +36,7 @@ double calcItem(double x, uint16_t n) {
 double expn(double x, uint16_t count) {
   double res = 1;
   for (int i = 1; i < count; i++) {
-    res += calcItem(x,i);
+    res += calcItem(x, i);
   }
   return res;
 }
